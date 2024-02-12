@@ -1,4 +1,4 @@
-const { Schema } = require("mongoose");
+const { Schema, default: mongoose } = require("mongoose");
 
 
 const hotelSchema = new Schema({
@@ -51,6 +51,6 @@ const hotelSchema = new Schema({
   } 
 });
 
-const hotelModels = mongoose.model("Hotel",hotelSchema)
+const hotelModel = mongoose.model("Hotel",hotelSchema)
 
-module.exports = hotelModels
+module.exports = hotelModel
